@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Kenya Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🇰🇪 Kenya Tracker</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main>
+    <section class="panel auth-box">
+        <div class="card-icon" style="text-align:center;">🔐</div>
+
+        <h1>Welcome Back!</h1>
+        <p class="auth-note">Sign in to your account.</p>
+
+        <form id="loginForm">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail"
+                   placeholder="Enter your email" required>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword"
+                   placeholder="Enter your password" required>
+
+            <button class="button" type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage" class="message auth-note"
+           aria-live="polite"></p>
+
+        <p class="auth-note">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <p class="auth-note">
+            <a href="index.html">← Back to Home</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    © 2026 Kenya Location Tracker 🇰🇪
+</footer>
+
+<script src="auth.js"></script>
+</body>
+</html>

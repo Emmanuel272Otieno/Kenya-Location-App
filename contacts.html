@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | Kenya Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🇰🇪 Kenya Tracker</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tracker.html">Tracker</a>
+        <a class="active" href="contacts.html">Contacts</a>
+        <a href="safety.html">Safety</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="page-title">👥 Trusted Contacts</h1>
+    <p class="page-intro">
+        Add and manage people you choose to share your location with.
+    </p>
+
+    <section class="panel">
+        <h2>Add a New Contact</h2>
+
+        <form id="contactForm">
+            <label for="contactName">Full Name</label>
+            <input id="contactName" type="text"
+                   placeholder="Enter full name" required>
+
+            <label for="contactPhone">Phone Number</label>
+            <input id="contactPhone" type="tel"
+                   placeholder="Enter phone number" required>
+
+            <button class="button" type="submit">+ Add Contact</button>
+        </form>
+
+        <p id="contactMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+        <h2>My Contact List</h2>
+        <p>Number of contacts: <strong id="contactCount">0</strong></p>
+        <div id="contactList"></div>
+    </section>
+</main>
+
+<footer>
+    © 2026 Kenya Location Tracker 🇰🇪
+</footer>
+
+<script src="contacts.js"></script>
+</body>
+</html>

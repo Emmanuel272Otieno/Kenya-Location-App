@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tracker | Kenya Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🇰🇪 Kenya Tracker</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="tracker.html">Tracker</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="safety.html">Safety</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="page-title">📍 My Location Tracker</h1>
+    <p class="page-intro">
+        View your own GPS location after giving permission.
+    </p>
+
+    <section class="panel">
+        <h2>Location Permission</h2>
+        <p>Agree before requesting your device location.</p>
+
+        <label>
+            <input type="checkbox" id="locationConsent">
+            I agree to access and display my own location.
+        </label>
+
+        <button class="button" id="startTracking">Start Tracking</button>
+        <button class="button danger" id="stopTracking">Stop Tracking</button>
+
+        <p class="message" id="trackerStatus" aria-live="polite">
+            Tracking is stopped.
+        </p>
+    </section>
+
+    <section class="card-grid">
+        <div class="card accent-blue">
+            <h3>Latitude</h3>
+            <p id="latitude">Not available</p>
+        </div>
+
+        <div class="card accent-blue">
+            <h3>Longitude</h3>
+            <p id="longitude">Not available</p>
+        </div>
+
+        <div class="card accent-blue">
+            <h3>Accuracy</h3>
+            <p id="accuracy">Not available</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Your Location on the Map</h2>
+        <div id="map"></div>
+        <button class="button" id="shareLocation">Share Location</button>
+    </section>
+</main>
+
+<footer>
+    © 2026 Kenya Location Tracker 🇰🇪
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="tracker.js"></script>
+</body>
+</html>
